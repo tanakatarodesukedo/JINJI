@@ -28,8 +28,14 @@ namespace BlazorJinji.Server.Controllers
         public async Task<IList<PregnancyReportModel>> GetListAsync([FromBody] PregnancyReportCondition condition)
         {
             // 依存関係を直接使用
-            var pregnancyReports = await pregnancyReportService.GetListAsync(condition);
-            return pregnancyReports;
+            return await pregnancyReportService.GetListAsync(condition);
+        }
+
+        [HttpPost("Insert")]
+        public async Task InsertAsync([FromBody] PregnancyReportModel model)
+        {
+            // 依存関係を直接使用
+            await pregnancyReportService.InsertAsync(model);
         }
     }
 }

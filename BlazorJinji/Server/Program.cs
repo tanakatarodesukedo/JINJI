@@ -34,8 +34,7 @@ namespace BlazorJinji.Server
                     // NpgsqlConnection を依存性注入コンテナに登録（リクエストごとに新しい接続が作成され、リクエスト終了時に接続が自動的にクローズされる）
                     services.AddScoped(sp =>
                     {
-                        var connection = new NpgsqlConnection(connectionString);
-                        return connection;
+                        return new NpgsqlConnection(connectionString);
                     });
 
                     // PregnancyReportService の登録

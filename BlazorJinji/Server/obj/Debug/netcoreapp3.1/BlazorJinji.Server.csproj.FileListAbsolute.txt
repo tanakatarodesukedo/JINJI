@@ -1,3 +1,12 @@
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.csproj.AssemblyReference.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.AssemblyInfoInputs.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.AssemblyInfo.cs
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.csproj.CoreCompileInputs.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.RazorAssemblyInfo.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.RazorAssemblyInfo.cs
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.sourcelink.json
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\BlazorJinji.Client.StaticWebAssets.xml
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\appsettings.json
@@ -199,14 +208,6 @@ C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\BlazorJinji.Shared.dll
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\BlazorJinji.Client.pdb
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\bin\Debug\netcoreapp3.1\BlazorJinji.Shared.pdb
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.csproj.AssemblyReference.cache
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.AssemblyInfoInputs.cache
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.AssemblyInfo.cs
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.csproj.CoreCompileInputs.cache
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.RazorAssemblyInfo.cache
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.RazorAssemblyInfo.cs
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.TagHelpers.input.cache
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.TagHelpers.output.cache
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Server\obj\Debug\netcoreapp3.1\BlazorJinji.Server.RazorCoreGenerate.cache

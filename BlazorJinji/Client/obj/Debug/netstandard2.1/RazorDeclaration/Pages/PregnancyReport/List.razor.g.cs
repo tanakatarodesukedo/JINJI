@@ -107,8 +107,6 @@ using BlazorJinji.Shared.Model;
 #nullable restore
 #line 55 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
        
-    private DateTime? selectedDate;
-
     private PregnancyReportCondition condition = new PregnancyReportCondition();
 
     private PregnancyReportModel[] pregnancyReports;
