@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\wwwroot\" />
+</StaticWebAssets>

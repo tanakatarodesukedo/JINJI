@@ -1,0 +1,77 @@
+﻿@page "/pregnancyReport/list"
+@using BlazorJinji.Shared
+@using BlazorJinji.Shared.Condition
+@using BlazorJinji.Shared.Model
+@inject HttpClient Http
+
+<h1>妊娠等報告書</h1>
+
+<EditForm Model="@condition" OnValidSubmit="SearchAsync">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="selectedDate">申請年月日:</label>
+        <InputDate id="selectedDate" @bind-Value="condition.SelectedDate" />
+    </div>
+
+    <div>
+        <label>
+            <label for="multipleFlg">多胎:</label>
+            <InputCheckbox id="multipleFlg" @bind-Value="condition.MultipleFlg" />
+        </label>
+    </div>
+
+    <button type="submit">検索</button>
+</EditForm>
+
+@if (pregnancyReports == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>職員番号</th>
+                <th>申請年月日</th>
+                <th>多胎／単胎</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in pregnancyReports)
+            {
+                <tr>
+                    <td>@data.StaffNo</td>
+                    <td>@DateTime.ParseExact(data.AppliDate, "yyyyMMdd", null).ToString("yyyy/MM/dd")</td>
+                    <td>@(data.MultipleFlg == "1" ? "多胎" : "単胎")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private PregnancyReportCondition condition = new PregnancyReportCondition();
+
+    private PregnancyReportModel[] pregnancyReports;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SearchAsync();
+    }
+
+    private async Task SearchAsync()
+    {
+        if (condition.SelectedDate.HasValue)
+        {
+            condition.AppliDate = condition.SelectedDate.Value.ToString("yyyyMMdd");
+        }
+
+        var response = await Http.PostAsJsonAsync<PregnancyReportCondition>("PregnancyReport", condition);
+
+        // レスポンスから JSON をデシリアライズしてリストを取得
+        pregnancyReports = await response.Content.ReadFromJsonAsync<PregnancyReportModel[]>();
+    }
+}

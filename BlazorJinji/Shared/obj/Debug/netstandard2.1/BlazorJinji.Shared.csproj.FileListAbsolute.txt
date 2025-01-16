@@ -1,0 +1,9 @@
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\bin\Debug\netstandard2.1\BlazorJinji.Shared.deps.json
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\bin\Debug\netstandard2.1\BlazorJinji.Shared.dll
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\bin\Debug\netstandard2.1\BlazorJinji.Shared.pdb
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.AssemblyInfoInputs.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.AssemblyInfo.cs
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.csproj.CoreCompileInputs.cache
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.dll
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.pdb
