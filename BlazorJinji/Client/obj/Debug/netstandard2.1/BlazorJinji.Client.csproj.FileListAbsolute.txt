@@ -382,6 +382,6 @@ C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\BlazorJinji.Client.csproj.CopyComplete
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\BlazorJinji.Client.dll
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\BlazorJinji.Client.pdb
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\R8fHv0j53M8oSlmHHRzNX0wDPSvJy7SzD5PfQcAg6T0=.hash
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\ZMgI9JP-ztvReNmu639kt8LCaCgoK4VEGVCyEd6k0DQ=.hash
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\wcxSESj3DFIAANzqGTv1wuIHE-zRIesB7jTU8ACg-RQ=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\0hBMFHtxd3E9hMe1g3NYp5e617Fl5U4LZiHR8w8jrcI=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\S_m6slAMzig_6qvKIYw36aWntpQHkoYq-aNZ5XZwFEQ=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\OGJ-_jKPmZD_niMTmoSUuxmmiwCiPk2A2g-W9svbfAI=.hash

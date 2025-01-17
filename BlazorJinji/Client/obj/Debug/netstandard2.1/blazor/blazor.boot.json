@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "BlazorJinji.Client.dll": "sha256-R8fHv0j53M8oSlmHHRzNX0wDPSvJy7SzD5PfQcAg6T0=",
+      "BlazorJinji.Client.dll": "sha256-0hBMFHtxd3E9hMe1g3NYp5e617Fl5U4LZiHR8w8jrcI=",
       "System.Text.Json.dll": "sha256-Nj057d0VVcZaphrVZWCHx5WjeQ9DSvkt5fxSevhqS1U=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -61,7 +61,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "BlazorJinji.Client.pdb": "sha256-ZMgI9JP\/ztvReNmu639kt8LCaCgoK4VEGVCyEd6k0DQ=",
+      "BlazorJinji.Client.pdb": "sha256-S+m6slAMzig+6qvKIYw36aWntpQHkoYq\/aNZ5XZwFEQ=",
       "BlazorJinji.Shared.pdb": "sha256-py4myTDcdb1Qymxh\/AVIimEqhCT0Yv5i\/40t5TuZUTY="
     },
     "runtime": {

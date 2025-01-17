@@ -27,7 +27,7 @@ namespace BlazorJinji.Server.Service
 
         public async Task<IList<PregnancyReportModel>> GetListAsync(PregnancyReportCondition condition)
         {
-            await connection.OpenAsync();
+            
 
             var sql = new StringBuilder();
             sql.AppendLine(" SELECT staff_no, appli_date, multiple_flg FROM tb_pregnancy_report WHERE 1 = 1 ");
@@ -41,6 +41,9 @@ namespace BlazorJinji.Server.Service
                 sql.AppendLine(" AND multiple_flg = '1' ");
             }
 
+            sql.AppendLine(" ORDER BY appli_date DESC, staff_no ");
+            sql.AppendLine(" FETCH FIRST 1000 ROWS ONLY ");
+
             var result = await connection.QueryAsync<PregnancyReportModel>(sql.ToString(), condition);
 
             return result.AsList();
@@ -48,31 +51,27 @@ namespace BlazorJinji.Server.Service
 
         public async Task<int> InsertAsync(PregnancyReportModel model)
         {
-
             // トランザクションの開始
-            using (var transaction = await connection.BeginTransactionAsync())
+            using var transaction = await connection.BeginTransactionAsync();
+            try
             {
-                try
-                {
-                    // INSERTクエリの実行
-                    string sql = "INSERT INTO tb_pregnancy_report (staff_no, appli_date, multiple_flg) VALUES (@StaffNo, @AppliDate, @MultipleFlg)";
+                // INSERTクエリの実行
+                string sql = "INSERT INTO tb_pregnancy_report (staff_no, appli_date, multiple_flg) VALUES (@StaffNo, @AppliDate, @MultipleFlg)";
 
-                    // Dapperを使ってデータを挿入
-                    int count = await connection.ExecuteAsync(sql, model, transaction);
+                // Dapperを使ってデータを挿入
+                int count = await connection.ExecuteAsync(sql, model, transaction);
 
-                    // コミット
-                    await transaction.CommitAsync();
+                // コミット
+                await transaction.CommitAsync();
 
-                    return count;
-                }
-                catch (Exception ex)
-                {
-                    // エラー発生時はロールバック
-                    await transaction.RollbackAsync();
-                    // エラーハンドリングを追加
-                    throw new Exception("データ挿入に失敗しました", ex);
-                }
-
+                return count;
+            }
+            catch (Exception ex)
+            {
+                // エラー発生時はロールバック
+                await transaction.RollbackAsync();
+                // エラーハンドリングを追加
+                throw new Exception("データ挿入に失敗しました", ex);
             }
         }
     }

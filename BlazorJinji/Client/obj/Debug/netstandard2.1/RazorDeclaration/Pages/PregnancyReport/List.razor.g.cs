@@ -105,7 +105,7 @@ using BlazorJinji.Shared.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 55 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+#line 57 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
        
     private PregnancyReportCondition condition = new PregnancyReportCondition();
 
@@ -129,9 +129,18 @@ using BlazorJinji.Shared.Model;
         pregnancyReports = await response.Content.ReadFromJsonAsync<PregnancyReportModel[]>();
     }
 
+    private void MoveDetailPage()
+    {
+        string staffNo = $"{new Random().Next(0, 999999):D6}";
+
+        // 登録画面へ遷移
+        Navi.NavigateTo($"pregnancyReport/detail/{staffNo}");
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager Navi { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
