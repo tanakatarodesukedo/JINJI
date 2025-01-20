@@ -1,14 +1,11 @@
-﻿using Npgsql;
-using System.Threading.Tasks;
-using System;
-using Dapper;
+﻿using BlazorJinji.Shared.Condition;
 using BlazorJinji.Shared.Model;
-using System.Collections;
-using System.Linq;
+using Dapper;
+using Npgsql;
+using System;
 using System.Collections.Generic;
-using BlazorJinji.Shared.Condition;
 using System.Text;
-using System.Reflection;
+using System.Threading.Tasks;
 
 namespace BlazorJinji.Server.Service
 {
@@ -27,8 +24,6 @@ namespace BlazorJinji.Server.Service
 
         public async Task<IList<PregnancyReportModel>> GetListAsync(PregnancyReportCondition condition)
         {
-            
-
             var sql = new StringBuilder();
             sql.AppendLine(" SELECT staff_no, appli_date, multiple_flg FROM tb_pregnancy_report WHERE 1 = 1 ");
 
@@ -72,6 +67,43 @@ namespace BlazorJinji.Server.Service
                 await transaction.RollbackAsync();
                 // エラーハンドリングを追加
                 throw new Exception("データ挿入に失敗しました", ex);
+            }
+        }
+
+        public async Task<string> BulkUpdateAsync(PregnancyReportModel model)
+        {
+            // トランザクションの開始
+            using var transaction = await connection.BeginTransactionAsync();
+            try
+            {
+                // ストアドプロシージャ
+                using var cmd = new NpgsqlCommand("refresh_pregnancy_report", connection);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                // INパラメータの設定
+                cmd.Parameters.AddWithValue("loop_count", 100000);
+
+                // OUTパラメータの設定
+                var outParam = new NpgsqlParameter("result_cd", NpgsqlTypes.NpgsqlDbType.Char)
+                {
+                    Direction = System.Data.ParameterDirection.Output
+                };
+                cmd.Parameters.Add(outParam);
+
+                // ストアドプロシージャを実行
+                cmd.ExecuteNonQuery();
+
+                // コミット
+                await transaction.CommitAsync();
+
+                return $"{outParam.Value}";
+            }
+            catch (Exception ex)
+            {
+                // エラー発生時はロールバック
+                await transaction.RollbackAsync();
+                // エラーハンドリングを追加
+                throw new Exception("データ更新に失敗しました", ex);
             }
         }
     }
