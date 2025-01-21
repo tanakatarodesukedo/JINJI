@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorJinji.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fbebaad6415f58d63632e9c8ca690796a66479b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c1708dc845dd7c43dc036bc88f1d6a064d01467")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorJinji.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorJinji.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

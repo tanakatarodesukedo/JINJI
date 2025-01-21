@@ -381,7 +381,7 @@ C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\BlazorJi.344F4109.Up2Date
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\gV-htmjnujkdXuD51W9dOhAQy02VHxEdQTj1xoHksEM=.hash
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\KjBHfmV424d7Q1rllGlpGqZjWdE0TBZaq7z2tUdsGnk=.hash
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\uImYFpodcr9UXZw7Zfed3hfAKX4XFZpOUSFG25Nu9Z4=.hash
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\QqPWZGSqP1IgKmJfuNcZZjzq4HZ4CBJTtU1u1WqV6go=.hash
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\7ZstcXWW9oE_VIRQypyWthgClm2zTD2YNYtT3Hu6lms=.hash
-C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\hQERqGV6arqlvoselol-c0MFR0H_EdN9wf5uVYt5fto=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\byTViph257z22rWUC0FUXVC_Bzeer9gAXHc0DKMWF6w=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\hUA5OUn467EgpTCL7X1lEUAJxDN8t3fb_ndzDMxwN0U=.hash
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\obj\Debug\netstandard2.1\integrity\6wPng8UB-YvIWzIhAgjHRiyPBqM9pVlbBOlIoDoZN-w=.hash
