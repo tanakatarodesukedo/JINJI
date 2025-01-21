@@ -1,12 +1,12 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\vdoN3dRAy2_kwbB_RwzEcOW9sYey_Hx0RAbemK8LHLc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\uImYFpodcr9UXZw7Zfed3hfAKX4XFZpOUSFG25Nu9Z4=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorJinji.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorJinji.Client.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Nj057d0VVcZaphrVZWCHx5WjeQ9DSvkt5fxSevhqS1U=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QqPWZGSqP1IgKmJfuNcZZjzq4HZ4CBJTtU1u1WqV6go=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
     },
@@ -191,7 +191,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4Z7ullP4_LpIbzb3W61tztKpNj4BJ4w0AsW4Q5Hxkw8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gV-htmjnujkdXuD51W9dOhAQy02VHxEdQTj1xoHksEM=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorJinji.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorJinji.Shared.dll.br"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\zt13QyKdJo7J9zrUProXisVwb0TqkWlZbFgz7THSj-o=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7ZstcXWW9oE_VIRQypyWthgClm2zTD2YNYtT3Hu6lms=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorJinji.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorJinji.Client.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9MERcFC2m9DXKdSIwjRhasvzWKeJx_n9meR3-K4-ESM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KjBHfmV424d7Q1rllGlpGqZjWdE0TBZaq7z2tUdsGnk=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorJinji.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorJinji.Shared.pdb.br"
     },
@@ -296,7 +296,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\emcKVEBBwtisQmJo5m1yeXdsHUx942Trs0-00fb7F2M=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hQERqGV6arqlvoselol-c0MFR0H_EdN9wf5uVYt5fto=.hash",
       "Source": "C:\\Users\\cic44\\source\\repos\\BlazorJinji\\BlazorJinji\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }
