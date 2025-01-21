@@ -3,7 +3,7 @@
 #pragma warning disable 1591
 namespace BlazorJinji.Client
 {
-    #line hidden
+    #line default
     using global::System;
     using global::System.Collections.Generic;
     using global::System.Linq;
@@ -11,68 +11,63 @@ namespace BlazorJinji.Client
     using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http;
+using System.Net.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http.Json;
+using System.Net.Http.Json
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Forms
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 4 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Components.Routing
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Web
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.WebAssembly.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 7 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.JSInterop
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 8 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client;
+using BlazorJinji.Client
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 9 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client.Shared;
+using BlazorJinji.Client.Shared
 
 #line default
 #line hidden
 #nullable disable
+    ;
+    #nullable restore
     public partial class App : global::Microsoft.AspNetCore.Components.ComponentBase
+    #nullable disable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -87,7 +82,7 @@ using BlazorJinji.Client.Shared;
 #line hidden
 #nullable disable
             )));
-            __builder.AddAttribute(2, "Found", (global::Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder2) => {
+            __builder.AddAttribute(2, "Found", (global::Microsoft.AspNetCore.Components.RenderFragment<global::Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder2) => {
                 __builder2.AddMarkupContent(3, "\r\n        ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.RouteView>(4);
                 __builder2.AddAttribute(5, "RouteData", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.RouteData>(

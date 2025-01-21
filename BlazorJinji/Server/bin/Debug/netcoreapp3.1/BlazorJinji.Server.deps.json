@@ -788,7 +788,10 @@
           "System.Net.Http.Json": "3.2.0"
         },
         "runtime": {
-          "BlazorJinji.Client.dll": {}
+          "BlazorJinji.Client.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "BlazorJinji.Client.dll": {}
@@ -796,7 +799,10 @@
       },
       "BlazorJinji.Shared/1.0.0": {
         "runtime": {
-          "BlazorJinji.Shared.dll": {}
+          "BlazorJinji.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "BlazorJinji.Shared.dll": {}
