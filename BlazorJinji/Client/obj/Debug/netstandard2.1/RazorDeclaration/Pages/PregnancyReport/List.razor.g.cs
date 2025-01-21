@@ -6,7 +6,7 @@
 
 namespace BlazorJinji.Client.Pages.PregnancyReport
 {
-    #line hidden
+    #line default
     using global::System;
     using global::System.Collections.Generic;
     using global::System.Linq;
@@ -14,90 +14,91 @@ namespace BlazorJinji.Client.Pages.PregnancyReport
     using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http;
+using System.Net.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http.Json;
+using System.Net.Http.Json
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Forms
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 4 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Components.Routing
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Web
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.WebAssembly.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 7 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.JSInterop
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 8 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client;
+using BlazorJinji.Client
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 9 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client.Shared;
+using BlazorJinji.Client.Shared
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
-using BlazorJinji.Shared;
+ using BlazorJinji.Shared
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
-using BlazorJinji.Shared.Condition;
+ using BlazorJinji.Shared.Condition
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 4 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
-using BlazorJinji.Shared.Model;
+ using BlazorJinji.Shared.Model
 
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Components.RouteAttribute("/pregnancyReport/list")]
+    ;
+    [global::Microsoft.AspNetCore.Components.RouteAttribute(
+    // language=Route,Component
+#nullable restore
+#line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+      "/pregnancyReport/list"
+
+#line default
+#line hidden
+#nullable disable
+    )]
+    #nullable restore
     public partial class List : global::Microsoft.AspNetCore.Components.ComponentBase
+    #nullable disable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,10 +106,8 @@ using BlazorJinji.Shared.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 55 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+#line 57 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
        
-    private DateTime? selectedDate;
-
     private PregnancyReportCondition condition = new PregnancyReportCondition();
 
     private PregnancyReportModel[] pregnancyReports;
@@ -124,6 +123,10 @@ using BlazorJinji.Shared.Model;
         {
             condition.AppliDate = condition.SelectedDate.Value.ToString("yyyyMMdd");
         }
+        else
+        {
+            condition.AppliDate = string.Empty;
+        }
 
         var response = await Http.PostAsJsonAsync<PregnancyReportCondition>("PregnancyReport", condition);
 
@@ -131,10 +134,54 @@ using BlazorJinji.Shared.Model;
         pregnancyReports = await response.Content.ReadFromJsonAsync<PregnancyReportModel[]>();
     }
 
+    private void MoveDetailPage()
+    {
+        string staffNo = $"{new Random().Next(0, 999999):D6}";
+
+        // 登録画面へ遷移
+        Navi.NavigateTo($"pregnancyReport/detail/{staffNo}");
+    }
+
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
+
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private 
+#nullable restore
+#line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+        NavigationManager
+
+#line default
+#line hidden
+#nullable disable
+         
+#nullable restore
+#line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+                          Navi
+
+#line default
+#line hidden
+#nullable disable
+         { get; set; }
+         = default!;
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private 
+#nullable restore
+#line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+        HttpClient
+
+#line default
+#line hidden
+#nullable disable
+         
+#nullable restore
+#line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\PregnancyReport\List.razor"
+                   Http
+
+#line default
+#line hidden
+#nullable disable
+         { get; set; }
+         = default!;
     }
 }
 #pragma warning restore 1591

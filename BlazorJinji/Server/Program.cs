@@ -3,12 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlazorJinji.Server
 {
@@ -35,6 +30,7 @@ namespace BlazorJinji.Server
                     services.AddScoped(sp =>
                     {
                         var connection = new NpgsqlConnection(connectionString);
+                        connection.Open();
                         return connection;
                     });
 

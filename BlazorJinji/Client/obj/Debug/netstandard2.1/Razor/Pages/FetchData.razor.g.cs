@@ -3,7 +3,7 @@
 #pragma warning disable 1591
 namespace BlazorJinji.Client.Pages
 {
-    #line hidden
+    #line default
     using global::System;
     using global::System.Collections.Generic;
     using global::System.Linq;
@@ -11,76 +11,79 @@ namespace BlazorJinji.Client.Pages
     using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http;
+using System.Net.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http.Json;
+using System.Net.Http.Json
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Forms
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 4 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Components.Routing
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Web
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.WebAssembly.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 7 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.JSInterop
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 8 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client;
+using BlazorJinji.Client
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 9 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client.Shared;
+using BlazorJinji.Client.Shared
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
-using BlazorJinji.Shared;
+ using BlazorJinji.Shared
 
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
+    ;
+    [global::Microsoft.AspNetCore.Components.RouteAttribute(
+    // language=Route,Component
+#nullable restore
+#line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
+      "/fetchdata"
+
+#line default
+#line hidden
+#nullable disable
+    )]
+    #nullable restore
     public partial class FetchData : global::Microsoft.AspNetCore.Components.ComponentBase
+    #nullable disable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -95,6 +98,7 @@ using BlazorJinji.Shared;
 #line default
 #line hidden
 #nullable disable
+
             __builder.AddContent(2, "    ");
             __builder.AddMarkupContent(3, "<p><em>Loading...</em></p>\r\n");
 #nullable restore
@@ -106,6 +110,7 @@ else
 #line default
 #line hidden
 #nullable disable
+
             __builder.AddContent(4, "    ");
             __builder.OpenElement(5, "table");
             __builder.AddAttribute(6, "class", "table");
@@ -121,47 +126,56 @@ else
 #line default
 #line hidden
 #nullable disable
+
             __builder.AddContent(11, "                ");
             __builder.OpenElement(12, "tr");
             __builder.AddMarkupContent(13, "\r\n                    ");
             __builder.OpenElement(14, "td");
+            __builder.AddContent(15, 
 #nullable restore
 #line 28 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
-__builder.AddContent(15, forecast.Date.ToShortDateString());
+                         forecast.Date.ToShortDateString()
 
 #line default
 #line hidden
 #nullable disable
+            );
             __builder.CloseElement();
             __builder.AddMarkupContent(16, "\r\n                    ");
             __builder.OpenElement(17, "td");
+            __builder.AddContent(18, 
 #nullable restore
 #line 29 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
-__builder.AddContent(18, forecast.TemperatureC);
+                         forecast.TemperatureC
 
 #line default
 #line hidden
 #nullable disable
+            );
             __builder.CloseElement();
             __builder.AddMarkupContent(19, "\r\n                    ");
             __builder.OpenElement(20, "td");
+            __builder.AddContent(21, 
 #nullable restore
 #line 30 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
-__builder.AddContent(21, forecast.TemperatureF);
+                         forecast.TemperatureF
 
 #line default
 #line hidden
 #nullable disable
+            );
             __builder.CloseElement();
             __builder.AddMarkupContent(22, "\r\n                    ");
             __builder.OpenElement(23, "td");
+            __builder.AddContent(24, 
 #nullable restore
 #line 31 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
-__builder.AddContent(24, forecast.Summary);
+                         forecast.Summary
 
 #line default
 #line hidden
 #nullable disable
+            );
             __builder.CloseElement();
             __builder.AddMarkupContent(25, "\r\n                ");
             __builder.CloseElement();
@@ -173,6 +187,7 @@ __builder.AddContent(24, forecast.Summary);
 #line default
 #line hidden
 #nullable disable
+
             __builder.AddContent(27, "        ");
             __builder.CloseElement();
             __builder.AddMarkupContent(28, "\r\n    ");
@@ -185,6 +200,7 @@ __builder.AddContent(24, forecast.Summary);
 #line default
 #line hidden
 #nullable disable
+
         }
         #pragma warning restore 1998
 #nullable restore
@@ -201,7 +217,25 @@ __builder.AddContent(24, forecast.Summary);
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
+
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private 
+#nullable restore
+#line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
+        HttpClient
+
+#line default
+#line hidden
+#nullable disable
+         
+#nullable restore
+#line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Pages\FetchData.razor"
+                   Http
+
+#line default
+#line hidden
+#nullable disable
+         { get; set; }
+         = default!;
     }
 }
 #pragma warning restore 1591

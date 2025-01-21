@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BlazorJinji.Shared.Model
+﻿namespace BlazorJinji.Shared.Model
 {
     public class PregnancyReportModel
     {

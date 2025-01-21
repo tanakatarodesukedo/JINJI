@@ -1,0 +1,77 @@
+﻿@page "/pregnancyReport/detail/{StaffNo}"
+@using BlazorJinji.Shared
+@using BlazorJinji.Shared.Condition
+@using BlazorJinji.Shared.Model
+@using System.ComponentModel.DataAnnotations
+@inject HttpClient Http
+@inject NavigationManager Navi
+
+<h1>妊娠等報告書登録</h1>
+
+<button class="btn btn-secondary" @onclick="MoveListPage">戻る</button>
+
+<EditForm Model="@viewModel" OnValidSubmit="InsertAsync">
+    <DataAnnotationsValidator />
+    @* <ValidationSummary /> *@
+
+    <div>
+        <label for="selectedDate">申請年月日:</label>
+        <InputDate id="selectedDate" @bind-Value="viewModel.SelectedDate" />
+        <ValidationMessage For="() => viewModel.SelectedDate" />
+    </div>
+
+    <div>
+        <label>
+            <label for="multipleFlg">多胎:</label>
+            <InputCheckbox id="multipleFlg" @bind-Value="viewModel.MultipleFlg" />
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">登録</button>
+    @if (isConfirmed)
+    {
+        <p>本当に登録して大丈夫です？？</p>
+    }
+</EditForm>
+
+@code {
+    [Parameter]
+    public string StaffNo { get; set; }
+
+    private PregnancyReport viewModel = new PregnancyReport();
+
+    private PregnancyReportModel pregnancyReport = new PregnancyReportModel();
+
+    private bool isConfirmed = false;
+
+    private async Task InsertAsync()
+    {
+        if (!isConfirmed)
+        {
+            isConfirmed = true;
+            return;
+        }
+
+        pregnancyReport.StaffNo = StaffNo;
+        pregnancyReport.AppliDate = viewModel.SelectedDate.Value.ToString("yyyyMMdd");
+        pregnancyReport.MultipleFlg = viewModel.MultipleFlg ? "1" : "0";
+
+        var response = await Http.PostAsJsonAsync<PregnancyReportModel>("PregnancyReport/Insert", pregnancyReport);
+
+        MoveListPage();
+    }
+
+    private class PregnancyReport
+    {
+        [Required(ErrorMessage = "申請年月日は必須です。")]
+        public DateTime? SelectedDate { get; set; }
+
+        public bool MultipleFlg { get; set; } = false;
+    }
+
+    private void MoveListPage()
+    {
+        // 一覧画面へ遷移
+        Navi.NavigateTo("pregnancyReport/list");
+    }
+}

@@ -6,7 +6,7 @@
 
 namespace BlazorJinji.Client.Shared
 {
-    #line hidden
+    #line default
     using global::System;
     using global::System.Collections.Generic;
     using global::System.Linq;
@@ -14,68 +14,71 @@ namespace BlazorJinji.Client.Shared
     using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http;
+using System.Net.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 2 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using System.Net.Http.Json;
+using System.Net.Http.Json
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 3 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Components.Forms
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 4 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Components.Routing
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 5 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.Web
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 6 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.WebAssembly.Http
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 7 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.JSInterop
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 8 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client;
+using BlazorJinji.Client
 
-#line default
-#line hidden
 #nullable disable
+    ;
 #nullable restore
 #line 9 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\_Imports.razor"
-using BlazorJinji.Client.Shared;
+using BlazorJinji.Client.Shared
 
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    ;
+    #nullable restore
+    public partial class MainLayout : 
+#nullable restore
+#line 1 "C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Client\Shared\MainLayout.razor"
+          LayoutComponentBase
+
+#line default
+#line hidden
+#nullable disable
+
+    #nullable disable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

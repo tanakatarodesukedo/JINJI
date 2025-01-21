@@ -7,3 +7,4 @@ C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.csproj.CoreCompileInputs.cache
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.dll
 C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.pdb
+C:\Users\cic44\source\repos\BlazorJinji\BlazorJinji\Shared\obj\Debug\netstandard2.1\BlazorJinji.Shared.sourcelink.json

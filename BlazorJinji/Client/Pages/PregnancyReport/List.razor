@@ -3,8 +3,9 @@
 @using BlazorJinji.Shared.Condition
 @using BlazorJinji.Shared.Model
 @inject HttpClient Http
+@inject NavigationManager Navi
 
-<h1>妊娠等報告書</h1>
+<h1>妊娠等報告書一覧</h1>
 
 <EditForm Model="@condition" OnValidSubmit="SearchAsync">
     <DataAnnotationsValidator />
@@ -22,7 +23,8 @@
         </label>
     </div>
 
-    <button type="submit">検索</button>
+    <button type="submit" class="btn btn-primary">検索</button>
+    <button class="btn btn-secondary" @onclick="MoveDetailPage"> 登録</button>
 </EditForm>
 
 @if (pregnancyReports == null)
@@ -68,10 +70,22 @@ else
         {
             condition.AppliDate = condition.SelectedDate.Value.ToString("yyyyMMdd");
         }
+        else
+        {
+            condition.AppliDate = string.Empty;
+        }
 
         var response = await Http.PostAsJsonAsync<PregnancyReportCondition>("PregnancyReport", condition);
 
         // レスポンスから JSON をデシリアライズしてリストを取得
         pregnancyReports = await response.Content.ReadFromJsonAsync<PregnancyReportModel[]>();
+    }
+
+    private void MoveDetailPage()
+    {
+        string staffNo = $"{new Random().Next(0, 999999):D6}";
+
+        // 登録画面へ遷移
+        Navi.NavigateTo($"pregnancyReport/detail/{staffNo}");
     }
 }
