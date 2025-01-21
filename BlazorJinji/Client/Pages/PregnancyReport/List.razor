@@ -70,6 +70,10 @@ else
         {
             condition.AppliDate = condition.SelectedDate.Value.ToString("yyyyMMdd");
         }
+        else
+        {
+            condition.AppliDate = string.Empty;
+        }
 
         var response = await Http.PostAsJsonAsync<PregnancyReportCondition>("PregnancyReport", condition);
 
